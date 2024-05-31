@@ -528,7 +528,7 @@ function Home() {
                     }}
                 >
                     <Typography variant="h4" component="div">
-                        Extend Due Date
+                        Create Task
                     </Typography>
 
                     <Divider />
