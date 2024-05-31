@@ -1,0 +1,4 @@
+django
+django-jwt-extended
+djangorestframework
+django-cors-headers
