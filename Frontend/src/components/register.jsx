@@ -122,6 +122,7 @@ function Register() {
                                 fullWidth
                                 label="Password"
                                 placeholder="Password"
+                                type="password"
                                 col
                                 InputProps={{
                                     startAdornment: (
