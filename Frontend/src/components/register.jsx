@@ -57,19 +57,20 @@ function Register() {
                 'email': email
             }).then((response) => {
                 console.log(response);
-            }).catch((reason) => {
                 setAlert(true);
-                let data = true;
-                if (data) {
+                let data = response.data;
+                if (data.includes('Username')) {
                     setMessage('Username already exists');
                     setUsernameColor('error');
                     setEmailColor('primary');
                     setPasswordColor('primary');
-                } else {
+                } else if (data.includes('Email')) {
                     setMessage('Email already exists');
                     setEmailColor('error');
                     setUsernameColor('primary');
                     setPasswordColor('primary');
+                } else {
+                    window.location.href = '/login';
                 }
             })
         }
