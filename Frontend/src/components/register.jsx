@@ -59,7 +59,7 @@ function Register() {
                 console.log(response);
             }).catch((reason) => {
                 setAlert(true);
-                let data = reason.response.data.username;
+                let data = true;
                 if (data) {
                     setMessage('Username already exists');
                     setUsernameColor('error');
