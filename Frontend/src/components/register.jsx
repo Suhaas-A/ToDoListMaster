@@ -56,7 +56,7 @@ function Register() {
                 'password': password,
                 'email': email
             }).then((response) => {
-                window.location = '/login';
+                alert(response);
             }).catch((reason) => {
                 setAlert(true);
                 let data = reason.response.data.username;
